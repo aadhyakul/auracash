@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="auraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Aura Halo Rings -->
+  <circle cx="50" cy="50" r="42" stroke="url(#auraGrad)" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.4" />
+  <circle cx="50" cy="50" r="35" stroke="url(#auraGrad)" stroke-width="3" opacity="0.8" filter="url(#glow)" />
+  <circle cx="50" cy="50" r="28" fill="url(#auraGrad)" />
+  
+  <!-- Location Pin & Cash Note Motif -->
+  <!-- Pin Base -->
+  <path d="M50 24C41.7157 24 35 30.7157 35 39C35 49 50 68 50 68C50 68 65 49 65 39C65 30.7157 58.2843 24 50 24Z" fill="#FFFFFF"/>
+  <!-- Rupee Symbol in Center -->
+  <path d="M46 32H54M46 35H53M46 32V42M46 37C48.5 37 51 36.5 51 34.5C51 32.5 48.5 32 46 32M49.5 39.5L54 46" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
